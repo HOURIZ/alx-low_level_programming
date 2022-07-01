@@ -1,1 +1,2 @@
-VimCrypt~03!0kš½Ğ{·06Rh–r^Ö¤³7çâ[çÚŒàÎ`]°AËmË•¨EJûx—>ÛDuúÈ
+#!/bin/bash
+gcc -S -masm=intel $CFILE
