@@ -3,25 +3,33 @@
 #include <time.h>
 
 /**
- * main - main block
- * Description: prints all single digit numbers of base 10
- * starting from 0, followed by a new line.
- * Return: 0
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int i = 0;
-	int j = 0;
-	for (i = 0; i < 10; i++)
+	int d, p;
+
+	for (d = '0'; d < '9'; d++)
 	{
-		for (j = i + 1; j < 10; j++)
+		for (p = d + 1; p <= '9'; p++)
 		{
-			putchar(48 + i);
-			putchar(48 + j);
-			putchar(',');
-			putchar(' ');
+			if (p != d)
+			{
+				putchar(d);
+				putchar(p);
+
+				if (d == '8' && p == '9')
+					continue;
+
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
-	putchar ('\n');
+	putchar('\n');
+
 	return (0);
 }
