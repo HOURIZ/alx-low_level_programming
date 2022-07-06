@@ -1,35 +1,23 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "main.h"
+
 
 /**
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Return: nothing, return void
  */
 
 int main(void)
 {
-	int d, p;
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 
-	for (d = '0'; d < '9'; d++)
-	{
-		for (p = d + 1; p <= '9'; p++)
-		{
-			if (p != d)
-			{
-				putchar(d);
-				putchar(p);
-
-				if (d == '8' && p == '9')
-					continue;
-
-				putchar(',');
-				putchar(' ');
-			}
-		}
-	}
-	putchar('\n');
-
-	return (0);
+return (0);
 }
